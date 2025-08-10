@@ -11,7 +11,7 @@ export default class ALXcource {
 
   set name(value) {
     if (typeof (value) !== 'string') {
-      throw new TypeError('the name must be a string');
+      throw new TypeError('Name must be a string');
     }
     this._name = value;
   }
@@ -22,7 +22,7 @@ export default class ALXcource {
 
   set length(value) {
     if (typeof (value) !== 'number') {
-      throw new TypeError('the length must be a number');
+      throw new TypeError('Length must be a number');
     }
     this._length = value;
   }
@@ -33,10 +33,10 @@ export default class ALXcource {
 
   set students(value) {
     if (!(value instanceof Array)) {
-      throw new TypeError('the students must be an Array');
+      throw new TypeError('Students must be an array');
     }
     if (!value.every((student) => typeof (student) === 'string')) {
-      throw new TypeError('student must be a string');
+      throw new TypeError('Student must be a string');
     }
     this._students = value;
   }
