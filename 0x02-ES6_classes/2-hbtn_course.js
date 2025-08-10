@@ -1,4 +1,4 @@
-export default class ALXcource {
+export default class ALXCource {
   constructor(name, length, students) {
     this.name = name;
     this.length = length;
